@@ -1,0 +1,100 @@
+@import "https://unpkg.com/open-props";
+* {
+  padding: var(--size-fluid-0);
+  margin: var(--size-fluid-0);
+  box-sizing: border-box;
+  font-family: var(--font-sans);
+}
+header {
+  text-align: center;
+  color: var(--gray-9);
+  --op-gradient-direction: to top left;
+  background-image: var(--gradient-15);
+  padding: var(--size-fluid-2);
+  border-bottom: 4px solid var(--pink-3);
+  margin-bottom: var(--size-fluid-3);
+}
+header .content {
+  margin: 0px auto;
+  width: 50%;
+}
+
+header .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .nav-bar ul li {
+  display: inline-block;
+  margin-left: var(--size-5);
+}
+
+header .container {
+  margin-top: var(--size-fluid-4);
+  display: flex;
+  justify-content: space-between;
+}
+header .container .info {
+  width: 50%;
+  text-align: left;
+}
+header .container .info h4 {
+  font-size: var(--font-size-5);
+  margin-bottom: var(--size-2);
+}
+
+header .container .info p {
+  margin-bottom: var(--size-4);
+}
+
+header .container .thumbnail {
+  width: 40%;
+  border: var(--border-size-2) solid var(--gray-1);
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+button {
+  background: var(--blue-4);
+  border: 0px;
+  padding: var(--size-3);
+  color: var(--gray-1);
+  border-radius: var(--radius-round);
+}
+section .content {
+  --op-gradient-direction: to top left;
+  background-image: var(--gradient-9);
+}
+section .features {
+  margin-top: var(--size-fluid-3);
+  width: 50%;
+  margin: 0px auto;
+  text-align: center;
+}
+section .features ul {
+  display: flex;
+  align-items: center;
+}
+section .features ul li {
+  margin: var(--size-fluid-2);
+  list-style: none;
+}
+section .features ul li h4 {
+  font-size: var(--font-size-1);
+}
+section .info{
+  text-align: center;
+  margin-bottom:var(--size-fluid-4);
+}
+.circle {
+  inline-size: var(--size-5);
+  aspect-ratio: var(--ratio-box);
+  border-radius: var(--radius-round);
+  width: 100px;
+  height: 100px;
+  border: var(--border-size-3) solid var(--gray-1);
+}
+
